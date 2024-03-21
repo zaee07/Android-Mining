@@ -1,24 +1,17 @@
 {
-	"pools":[
-	{
-		"name": "pool.verus.io",
-        "url": "stratum+tcp://pool.verus.io:9998",
-		"timeout": 150,
-		"disabled": 0
-	},
-	{
-		"name": "verus.farm (Quipacorn)",
-        "url": "stratum+tcp://verus.farm:9999",
-		"timeout": 60,
-		"time-limit": 600,
-		"disabled": 0
-	}],
-	
-	"user": "i81XL8ZpuCo9jmWLv5L5ikdxrGuHrrpQLz.Donator##",
-	"algo": "verus",
-	"threads": 8,
-	"cpu-priority": 1,
-	"retry-pause": 5,
-	"api-allow": "192.168.0.0/16",
-	"api-bind": "0.0.0.0:4068"
+  "pools": [
+    {
+      "name": "pool.verus.io",
+      "url": "stratum+tcp://ap.luckpool.net:3956",
+      "timeout": 150
+    }
+  ],
+
+  "user": "RAvpih2gSRbCGq5EoSymNnGUKCrALnTtC5.merlin",
+  "algo": "verus",
+  "threads": 4,
+  "cpu-priority": 1,
+  "retry-pause": 5,
+  "api-allow": "192.168.0.0/16",
+  "api-bind": "0.0.0.0:4068"
 }
