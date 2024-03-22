@@ -4,6 +4,16 @@
       "name": "pool.verus.io",
       "url": "stratum+tcp://ap.luckpool.net:3956",
       "timeout": 150
+    },
+    {
+      "name": "pool.verus.io",
+      "url": "stratum+tcp://na.luckpool.net:3957",
+      "timeout": 150
+    },
+    {
+      "name": "pool.verus.io",
+      "url": "stratum+tcp://eu.luckpool.net:3960",
+      "timeout": 150
     }
   ],
 

@@ -34,7 +34,7 @@ then
   INPUT=
   while [ "$INPUT" != "y" ] && [ "$INPUT" != "n" ]
   do
-    printf '"~/ccminer/config.json" already exists. Do you want to overwrite? (y/n) '
+    printf '"~/ccminer/config.json" sudah ada. kamu ingin menimpa file? (y/n) '
     read INPUT
     if [ "$INPUT" = "y" ]
     then
@@ -48,7 +48,7 @@ then
     fi
   done
 fi
-wget https://raw.githubusercontent.com/Oink70/Android-Mining/main/config.json -P ~/ccminer
+wget https://raw.githubusercontent.com/zaee07/Android-Mining/main/config.json -P ~/ccminer
 
 if [ -f ~/ccminer/ccminer ]
 then
@@ -67,8 +67,8 @@ screen -wipe 1>/dev/null 2>&1
 screen -dmS CCminer 1>/dev/null 2>&1
 #run the miner
 screen -S CCminer -X stuff "~/ccminer/ccminer -c ~/ccminer/config.json\n" 1>/dev/null 2>&1
-printf '\nMining started.\n'
-printf '===============\n'
+printf '\n\033[0;32mmining started green\033[0m\n\n'
+printf '\033[0;32m ################################################################## green\033[0m\n\n'
 printf '\nManual:\n'
 printf 'start: ~/.ccminer/start.sh\n'
 printf 'stop: screen -X -S CCminer quit\n'
@@ -78,11 +78,9 @@ EOF
 chmod +x start.sh
 
 echo "setup nearly complete."
-echo "Edit the config with \"nano ~/ccminer/config.json\""
+echo "Atur konfigurasi \"nano ~/ccminer/config.json\""
 
-echo "go to line 15 and change your worker name"
-echo "use \"<CTRL>-x\" to exit and respond with"
-echo "\"y\" on the question to save and \"enter\""
-echo "on the name"
+echo "\"<CTRL>-x\" untuk keluar"
+echo "\"y\" untuk menyimpan lalu \"enter\""
 
 echo "start the miner with \"cd ~/ccminer; ./start.sh\"."
